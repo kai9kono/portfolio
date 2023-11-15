@@ -4,38 +4,341 @@ body {
     color: #333;
 }
 
-.header {
-    line-height: 90px;
-    height: 90px;
-    background-color: white;
-    box-shadow: 0px 3px 10px #333;
+/* hamburger */
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.header-title {
-    text-align: center;
-    line-height: inherit;
-    margin: 0 auto;
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #333;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.studies a:link {
+    color: #0000EE;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+.studies a:visited {
+    color: #551A8B;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.studies a:hover {
+    color: #9999e8;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    border-bottom:rgba(202, 202, 202, 0.5) 1px solid;
+}
+
+.studies h3 {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .main {
     margin: 0 auto;
-    height: 1080px;
+    height: 100%;
     background-color: rgba(197, 241, 255, 0.8);
 }
 
 .introduction {
     font-size: 100px;
-    padding: 10% 10%;
+    padding-top: 10%;
+    padding-left: 10%;
     width: 60%;
+}
+
+.lang-selector {
+    font-size: 12px;
+    display: flex;
+    padding: 10% 0 10px 10%;
+}
+
+#en, #jp {
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+#en {
+    padding-right: 5px;
+}
+
+#jp {
+    padding-left: 5px;
+}
+
+#en:hover, #jp:hover {
+    cursor: pointer;
+    color: #888;
+}
+
+.biography {
+    font-size: 18px;
+    width: 100%;
+    padding: 0 10%;
+    margin-bottom: 5%;
+}
+
+.main-bg {
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-bottom: 50px;
+}
+
+.toc-title p {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.toc-contents {
+    width: 50%;
+    justify-content: left;
+    margin-top: 10px;
+    padding: 0 10px;
+    margin-left: 5%;
+    border-left: solid 1px #888;
+}
+
+.content {
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.content:hover {
+    text-decoration: underline;
+    color: #888;
+    cursor: pointer;
+}
+
+.studies,.projects,.self-analysis {
+    margin: 2%;
+}
+
+.studies-img1,.studies-img2 {
+    max-width: 700px;
+    max-height: 700px;  
+    margin: 0 auto;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.imgs {
+    height: 600px;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.img-slideshow {
+    display: inline-block;
+    text-align: center;
+    width: 65%;
+    vertical-align: middle;
+}
+
+.studies-ex {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.studies {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.studies-text {
+    vertical-align: middle;
+    width: 25%;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.self-analysis p {
+    margin: 0 2% 2% 2%;
+    text-indent: 15px;
+}
+
+.arrow-button-left,.arrow-button-right {
+    width: 30px;
+    height: 25px;
+    background-color:rgba(66, 211, 255, 0.8);
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.arrow-button-left {
+    margin-right: 1%;
+}
+
+.arrow-button-right {
+    margin-left: 1%;
+}
+
+.arrow-button-right:hover,.arrow-button-left:hover {
+    background-color:rgba(197, 241, 255, 0.8);
+    cursor: pointer;
 }
 
 .fade-in {
     animation: fadeIn 1s;
 }
 
+.fade-out { /* Use with 'classList.add' */
+    animation: fadeOut 1s;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
-    to { opacity: 100% }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 #desc::before {
