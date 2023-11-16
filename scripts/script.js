@@ -80,6 +80,7 @@ function showDivs2(n) {
 const aboutMe = document.getElementById("aboutme");
 const studies = document.getElementById("studies");
 const selfAnalysis = document.getElementById("self-analysis");
+const qualifications = document.getElementById("qualifications")
 
 function scrollToAboutMe() {
   aboutMe.scrollIntoView({behavior: "smooth"}); 
@@ -91,4 +92,8 @@ function scrollToStudies() {
 
 function scrollToSelfAnalysis() {
   selfAnalysis.scrollIntoView({behavior: "smooth"});
+}
+
+function scrollToQualifications() {
+  qualifications.scrollIntoView({behavior: "smooth"});
 }
