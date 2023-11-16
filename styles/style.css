@@ -243,6 +243,57 @@ h3 {
     margin-bottom: 50px;
 }
 
+.qualifications-entry img {
+    width: 64px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+
+}
+
+.qualification-text h3 {
+    border: none;
+    margin-bottom: 5%;
+    margin-top: 0;
+    padding: 0;
+}
+
+.qualifications-bg {
+    padding-bottom: 3%;
+}
+
+#qualification-title {
+    margin-bottom: 1%
+}
+
+.qualification-img {
+    display: inline-block;
+    width: 45%;
+    height: 33%;
+}
+
+.qualifications-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.qualification-text {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    text-align: left;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.qualifications-entry {
+    position: relative;
+    padding: 3%;
+    display: inline-block;
+    width: 40%;
+    height: 500px;
+}
+
 .studies-img1,.studies-img2 {
     max-width: 700px;
     max-height: 700px;  
