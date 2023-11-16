@@ -280,10 +280,9 @@ h3 {
 .qualification-text {
     display: inline-block;
     width: 45%;
-    position: relative;
     text-align: left;
-    top: 50%;
-    transform: translate(0,-50%);
+    height: 100%;
+    vertical-align: top;
 }
 
 .qualifications-entry {
