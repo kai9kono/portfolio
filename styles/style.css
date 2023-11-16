@@ -202,11 +202,6 @@ h3 {
     transform: translate(0,-50%);
 }
 
-#aboutme {
-    padding: 10% 0 3% 0;
-    font-size: 24px;
-}
-
 #en, #jp {
     text-decoration: underline;
     transition: color 0.3s;
@@ -229,7 +224,35 @@ h3 {
     font-size: 18px;
     width: 100%;
     padding: 0 10%;
-    margin-bottom: 5%;
+    height: 100vh;
+    text-align: center;
+}
+
+#bio, #aboutme {
+    width: 100%;
+    display: inline-block;
+}
+
+#aboutme {
+    padding: 15% 0 3% 0;
+    font-size: 24px;
+}
+
+#bio-text {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+#portrait {
+    background-image: url("../assets/images/portrait.png");
+    height: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 60%;
+    box-shadow: 0 0 100px 0 #ffedd3 inset;
 }
 
 .qualifications-bg, .studies-bg, .self-analysis-bg {
@@ -242,6 +265,7 @@ h3 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin-bottom: 50px;
 }
+
 
 .qualifications-entry img {
     width: 64px;
@@ -268,8 +292,9 @@ h3 {
 
 .qualification-img {
     display: inline-block;
-    width: 45%;
+    width: 20%;
     height: 33%;
+    text-align: left;
 }
 
 .qualifications-container {
@@ -290,7 +315,7 @@ h3 {
     padding: 3%;
     display: inline-block;
     width: 40%;
-    height: 500px;
+    height: 300px;
 }
 
 .studies-img1,.studies-img2 {
