@@ -30,17 +30,22 @@ nav {
   user-select: none;
 }
 
-#menuToggle a
+#menuToggle button
 {
-  text-decoration: none;
-  color: #232323;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    color: #232323;
+    width: 100%;
+    text-align: left;
   
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
+#menuToggle button:hover
 {
   color: tomato;
+  cursor: pointer;
 }
 
 #menuToggle input
@@ -117,7 +122,7 @@ nav {
   padding-top: 125px;
   height: 100vmax;
   
-  background: #ededed;
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   
@@ -167,7 +172,7 @@ ul {
 
 h3 {
     margin-top: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     padding-bottom: 1%;
     border-bottom:rgba(202, 202, 202, 0.5) 1px solid;
 }
@@ -184,16 +189,22 @@ h3 {
 }
 
 .introduction {
-    font-size: 100px;
-    padding-top: 10%;
-    padding-left: 10%;
-    width: 60%;
+    height: 100vh;
+    text-align: center;
+    width: 33%;
+    margin: 0 auto;
 }
 
-.lang-selector {
-    font-size: 12px;
-    display: flex;
-    padding: 10% 0 10px 10%;
+.name {
+    position: relative;
+    font-size: 40px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#aboutme {
+    padding: 10% 0 3% 0;
+    font-size: 24px;
 }
 
 #en, #jp {
@@ -232,34 +243,6 @@ h3 {
     margin-bottom: 50px;
 }
 
-.toc-title p {
-    font-size: 18px;
-    text-align: left;
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.toc-contents {
-    width: 50%;
-    justify-content: left;
-    margin-top: 10px;
-    padding: 0 10px;
-    margin-left: 5%;
-    border-left: solid 1px #888;
-}
-
-.content {
-    margin: 10px 0;
-    transition: color 0.3s;
-}
-
-.content:hover {
-    text-decoration: underline;
-    color: #888;
-    cursor: pointer;
-}
-
 .studies,.projects,.self-analysis {
     margin: 2%;
 }
@@ -288,7 +271,6 @@ h3 {
 }
 
 .studies-ex {
-    text-align: center;
     margin-bottom: 3%;
 }
 
@@ -303,6 +285,10 @@ h3 {
     width: 25%;
     display: inline-block;
     margin-left: 5%;
+}
+
+#studies6 {
+    font-size: 12px;
 }
 
 .self-analysis p {
@@ -352,9 +338,9 @@ h3 {
     to { opacity: 0; }
 }
 
-#desc::before {
+/* #desc::before {
     content: "Kai Kono";
-}
+} */
 
 .scroll {
     padding-top: 20px;

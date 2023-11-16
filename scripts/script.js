@@ -74,3 +74,21 @@ function showDivs2(n) {
   }
   x[slideIndex2-1].style.display = "block";  
 }
+
+//Hamburger Menu Scroll Functions
+
+const aboutMe = document.getElementById("aboutme");
+const studies = document.getElementById("studies");
+const selfAnalysis = document.getElementById("self-analysis");
+
+function scrollToAboutMe() {
+  aboutMe.scrollIntoView({behavior: "smooth"}); 
+}
+
+function scrollToStudies() {
+  studies.scrollIntoView({behavior: "smooth"});
+}
+
+function scrollToSelfAnalysis() {
+  selfAnalysis.scrollIntoView({behavior: "smooth"});
+}
