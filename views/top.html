@@ -20,7 +20,7 @@
                     <button onclick="scrollToAboutMe()"><li>About Me</li></button>
                     <button onclick="scrollToQualifications()"><li>Skills</li></button>
                     <button onclick="scrollToStudies()"><li>Studies</li></button>
-                    <button onclick="scrollToSelfAnalysis()"><li>Self-Analysis</li></button>
+                    <button onclick="scrollToContact()"><li>Contact</li></button>
                     <button onclick="toggleLanguage()"><li>EN /JP</li></button>
                 </ul>
             </div>
@@ -29,15 +29,16 @@
     <body>
         <div class="main">
             <div class="introduction">
-                <p class="fade-in name">
+                <span class="name-container">
+                    <p class="name">
                     Kai Kono
-                </p>
-                <br/>
+                    </p>
+                 </span>
             </div>
             <div class="biography">
                 <span id="bio-text">
                     <p id="aboutme">About Me</p>
-                    <p id="bio">2003年に東京で生まれ、7歳から13歳の間アメリカのカリフォルニア州にて育ち、帰国後に東京学芸大学附属国際中等教育学校に編入。大学は新たな環境を体験するために兵庫の関西学院大学に入学し、建築学を専攻。趣味はPCゲームとドライブ。</p>    
+                    <p id="bio">2003年に東京で生まれ、7歳から13歳の間アメリカのカリフォルニア州にて育ち、帰国後に東京学芸大学附属国際中等教育学校に編入。大学は東京を離れ、兵庫の関西学院大学に入学し、建築学を専攻。趣味はPCゲームとドライブ。</p>    
                 </span>
                 <span id="portrait"></span>
             </div>
@@ -53,10 +54,19 @@
                             <span class="qualification-text">
                                 <h3>TOEFL 110</h3>
                                 <h3>TOEIC 985</h3>
-                                <h3>英検１級</h3>
+                                <h3 id="eiken">英検１級</h3>
                                 <p>アメリカに住んでいた経験から、ネイティブレベルの英語力を習得。現在でも当時の友人とこまめに連絡を取り、英語力の維持・向上を心がけている。</p>
                             </span>
                         </span> 
+                        <span class="qualifications-entry">
+                            <span class="qualification-img">
+                                <img src="../assets/images/coding_language.png">
+                            </span>
+                            <span class="qualification-text">
+                                <h3>HTML / CSS / JavaScript</h3>
+                                <p>小学校の頃にアメリカで通っていたプログラミングスクールでHTML・CSSを習得し、独学でjavascriptを習得。本ポートフォリオサイトもHTML・CSS・javascriptのみで構成されている。</p>
+                            </span>
+                        </span>
                         <span class="qualifications-entry">
                             <span class="qualification-img">
                                 <img src="../assets/images/illustrator_logo.png">
@@ -72,16 +82,7 @@
                             </span>
                             <span class="qualification-text">
                                 <h3>CAD / BIM</h3>
-                                <p>建築の設計図を作成する際に用いる専門的なソフトウェアだが、これらのソフトを学習したことでモデリングなどの概念を学べた。</p>
-                            </span>
-                        </span>
-                        <span class="qualifications-entry">
-                            <span class="qualification-img">
-                                <img src="../assets/images/coding_language.png">
-                            </span>
-                            <span class="qualification-text">
-                                <h3>HTML / CSS / JavaScript</h3>
-                                <p>建築の設計図を作成する際に用いる専門的なソフトウェアだが、これらのソフトを学習したことでモデリングなどの概念を学べた。</p>
+                                <p>建築の設計図を作成する際に用いる専門的なソフトウェアだが、これらのソフトを学習したことでモデリングなどの視点・考え方を学べた。</p>
                             </span>
                         </span>
                     </div>
@@ -93,12 +94,16 @@
                     <div class="studies-ex">
                         <div class="studies-text">
                             <p id="studies1"><strong>大学3年　建築設計演習IV</strong></p>
+                            <p id="studies6">(制作期間 7週間)</p>
                             <br/>
-                            <p id="studies2">大阪駅付近にある、お初天神の周りのビルを撤去し、新たな複合施設を設計する課題。オフィスと同等の収益を見込むための収容率と、観光客に向けた高層ホテルを設計した。また、お初天神にないため、必要だと感じた庭園を模した公園も設計。</p>
                             <br/>
-                            <p id="studies3">この課題を通して、設計者として作りたいものと現実的に求められているもののバランスをとらなければいけないことを学んだ。複合施設とはいえ、元々オフィスで収益を得ていた地域には同等またはそれ以上の価値があるものを建設する必要があり、必ずしも設計者が絶対的権力を握っているとは限らない事実を学んだ。</p>
-                            <br/>
-                            <p id="studies4">また、はじめてRevitというモデリングソフトをしようした課題でもあったため、新たなツールの使い方を学べた。以前は住宅などの設計で簡易的な図面を作るためにはCADが効率的だったが、大型の施設を作るためには緻密な設計より構造や素材がわかるプレゼンテーションの方が優れていると感じたため使用した。結果的にはより効率的だったため、ものによってツールを変えることの大切さも学べた。</p>
+                            <div class="content">
+                                <p id="studies2">大阪駅付近にある、お初天神の周りのビルを撤去し、新たな複合施設を設計する課題。オフィスと同等の収益を見込むための収容率と、観光客に向けた高層ホテルを設計した。また、お初天神にないため、必要だと感じた庭園を模した公園も設計。</p>
+                                <br/>
+                                <p id="studies3">この課題を通して、設計者として作りたいものと現実的に求められているもののバランスをとらなければいけないことを学んだ。複合施設とはいえ、元々オフィスで収益を得ていた地域には同等またはそれ以上の価値があるものを建設する必要があり、必ずしも設計者が絶対的権力を握っているとは限らない事実を学んだ。</p>
+                                <br/>
+                                <p id="studies4">また、はじめてRevitというモデリングソフトをしようした課題でもあったため、新たなツールの使い方を学べた。以前は住宅などの設計で簡易的な図面を作るためにはCADが効率的だったが、大型の施設を作るためには緻密な設計より構造や素材がわかるプレゼンテーションの方が優れていると感じたため使用した。結果的にはより効率的だったため、ものによってツールを変えることの大切さも学べた。</p>
+                            </div>
                         </div>
                         
                         <div class="img-slideshow">
@@ -110,15 +115,15 @@
                                 <img class="studies-img1" src="../assets/images/project_1_5.png">
                             </div>
                             <div class="arrows">
-                                <button class="arrow-button-left" onclick="moveSlide1(-1)"> < </button>
-                                <button class="arrow-button-right" onclick="moveSlide1(1)"> > </button>
+                                <button class="arrow-button-left" onclick="moveSlide1(-1)"> ◀︎ </button>
+                                <button class="arrow-button-right" onclick="moveSlide1(1)"> ▶︎ </button>
                             </div>
                         </div>
                     </div>
                     <div class="studies-ex">
                         <div class="studies-text" >
                             <p id="studies5"><strong>株式会社インフラトップ インターン</br>アプリケーション制作</strong></p>
-                            <p id="studies6">(コードはこちら： <a href="https://www.github.com/kai9kono/bookers2" target="_blank">GitHub</a>)
+                            <p id="studies6"> (制作期間 1ヶ月、コードはこちら: <a href="https://www.github.com/kai9kono/bookers2" target="_blank">GitHub</a>)</p>
                             <br/>
                             <br/>
                             <p id="studies7">長期インターンの研修課題にて、Ruby及びRuby on Railsを新たなプログラミング言語として習得した。Bookersという、ユーザーが読んだ本のタイトルと意見を投稿し、投稿に対していいねやコメントができるという簡易的なアプリケーションを作成した。</p>
@@ -138,30 +143,36 @@
                                 <img class="studies-img2" src="../assets/images/project_3_6.png">
                             </div>
                             <div class="arrows">
-                                <button class="arrow-button-left" onclick="moveSlide2(-1)"> < </button>
-                                <button class="arrow-button-right" onclick="moveSlide2(1)"> > </button>
+                                <button class="arrow-button-left" onclick="moveSlide2(-1)"> ◀︎ </button>
+                                <button class="arrow-button-right" onclick="moveSlide2(1)"> ▶︎ </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="self-analysis-bg">
-                <div class="self-analysis">
-                    <h3 class="entry" id="self-analysis">Self-Analysis</h3>
-                    <p id="self-analysis1">
-                        大学にて建築学を専攻して学んだことは、UI・UXデザインにおいても活用できると考えています。建築設計を勉強してきた者として、建物は誰のために建てるのか、どのような営みが想定されるのか、などの顧客志向の考え方は培われていると考えます。私は個人的に視覚的なデザインはあまり得意ではなかったものの、設計する土地にはどのような用途の建物があるべきか、自分が使うとしたらどのような機能を期待するか、などのUXの観点からの考え方は得意だと自認しています。また、3DモデリングツールやCADソフトウェアに加え、プレゼンボード作成時にはIllustratorやPhotoShopなどのツールの使い方も熟知しています。こういった専門的な知識や、建築学で培ったものづくりに対する考え方を応用することで、使っていて心地の良いプロダクトやサービスの制作を目指したいと考えています。
-                    </p>
-                    <p id="self-analysis2">
-                        私の最大の強みは、新たな環境やツール、コミュニティなどに素早く、効率的に適応できる能力だと考えます。今まで体験した数多くの経験の中から、共通点を見つけることで素早く新たな環境に活かすことができます。私は元々PCゲームが趣味であるため、PC関連の機器やソフトウェアの使い方は独学で学んできました。中学1年生の時に、友人に誘われプログラミングスクールに通っていた経験もあり、現在でもエンジニアへの転職を志望している方のRubyの学習をメンターとして補助する長期インターンに参加しています。インターンを始める前はRubyに触れたことがなかったにも関わらず、1ヶ月という研修期間を経てメンターとしての業務を開始することができました。元より学習していたHTMLやCSS、javascriptなどの知識を駆使したことで新たな言語の学習へとつながったと考えています。他にも、大学の建築設計演習のためにCADソフトウェアに加え、Revitという新たなモデリングソフトウェアの使い方を習得したことも挙げられます。弊学の建築学部は私の代が１期生となっているため、新たな環境でのチャレンジは自分にとって有意義なものであったと考えています。
-                    </p>
-                    <p id="self-analysis3">
-                        一方、私は人に頼らずに一人で解決しようとしてしまう節があります。今までは挫折もなく大学高学年になってしまったが、大学に入り、建築設計課題にて自分の力にのみ頼れる状況に初めて置かれ、何度も挫折を繰り返してきました。大学入学時に親元を離れて新たな環境で一人暮らしをし、建築学という過酷な分野を専攻するという貴重な体験をしたことで、家族や友人、同僚などの力にどれほど自分が頼っていたかに気付かされました。建築設計は孤独で辛いと感じていた時も同じ体験をしている友人や仲間がいたことで頑張れました。また、建築学部の１期生として入学したため、先輩や前例のない環境にて友人と力を合わせて学を続けてきました。一人暮らしをして建築学を学ぶということは、東京を離れてまで入学した関西学院大学で過ごした時間で得た、私にとって最も成長をもたらしてくれた体験であると考えています。
-                    </p>
-                    <p id="self-analysis4">
-                        私は即戦力となり得る人材であると考えます。新たな環境・チームに素早く馴染み、一人暮らしや大学生活を経て学んだ人との関わり方を駆使して、喜ばれるプロダクト・サービスを共に作り上げるために必要な大きな歯車になれる自信があります。
-                    </p>
+                <div class="contact">
+                    <div class="entry" id="contact">
+                        <h3 class="contact-entry" id="contact">Contact</h3>                        
+                    </div>
+                    <div class="contact-content">
+                        <span class="contact-details">
+                            <span class="contact-img">
+                                <img src="../assets/images/mail-icon.png">
+                            </span>
+                            <span id="mail">
+                                <p>kai9kono@gmail.com</p>
+                            </span> 
+                        </span>
+                        <span class="contact-details">
+                            <span class="contact-img">
+                                <img src="../assets/images/phone-icon.png"> 
+                            </span>
+                            <span id="phone">
+                                <p>080-9469-1969</p>
+                            </span>
+                        </span>
+                    </div>
                 </div>
-            </div>
         </div>
         <script src="../scripts/script.js"></script>
     </body>
