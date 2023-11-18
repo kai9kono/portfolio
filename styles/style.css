@@ -245,7 +245,7 @@ h3 {
     text-align: center;
 }
 
-#bio, #aboutme {
+.bio, #aboutme {
     width: 100%;
     display: inline-block;
 }
@@ -381,7 +381,7 @@ h3 {
     padding: 3%;
     display: inline-block;
     width: 40%;
-    height: 300px;
+    height: 400px;
 }
 
 .studies-img1,.studies-img2 {
@@ -426,6 +426,11 @@ h3 {
 
 #studies6 {
     font-size: 12px;
+}
+
+#kominka {
+    width: 90%;
+    margin-right: 5%;
 }
 
 .contact p {
