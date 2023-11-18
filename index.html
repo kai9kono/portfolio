@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="image_src" href="./assets/images/thumbnail.png">
         <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
         <title>Kai Kono - Portfolio (JP)</title>
     </head>
@@ -21,9 +22,9 @@
                     <button onclick="scrollToQualifications()"><li>Skills</li></button>
                     <button onclick="scrollToStudies()"><li>Studies</li></button>
                     <button onclick="scrollToContact()"><li>Contact</li></button>
-                    <button onclick="toggleLanguage()"><li><a href="./en.html">EN /JP</a></li></button>
                 </ul>
             </div>
+            <span class="toggle-language"><button><a href="./en.html"> <strong>JP</strong> / EN </a></button></span>
         </nav>
     </header>
     <body>
@@ -88,7 +89,7 @@
                             </span>
                             <span class="qualification-text">
                                 <h3>CAD / BIM</h3>
-                                <p>建築の設計図を作成する際に用いる専門的なソフトウェアですが、これらのソフトを学習したことでモデリングなどの視点・考え方を学べました。</p>
+                                <p>AutoCAD, Revit, Rhinoceros などのソフトウェアが使えます。建築の設計図を作成する際に用いる専門的なソフトウェアですが、これらのソフトを学習したことでモデリングなどの視点・考え方を学べました。</p>
                             </span>
                         </span>
                     </div>
@@ -99,8 +100,8 @@
                     <h3 class="entry" id="studies">Studies</h3>
                     <div class="studies-ex">
                         <div class="studies-text">
-                            <p id="studies1"><strong>大学3年　建築設計演習IV</strong></p>
-                            <p id="studies6">(制作期間 7週間)</p>
+                            <p class="studies-entry" id="studies1">Hotel Oasis</p>
+                            <p id="studies6">(大学３年次設計課題、制作期間 7週間)</p>
                             <br/>
                             <br/>
                             <div class="content">
@@ -128,8 +129,8 @@
                     </div>
                     <div class="studies-ex">
                         <div class="studies-text" >
-                            <p id="studies5"><strong>株式会社インフラトップ インターン</br>アプリケーション制作</strong></p>
-                            <p id="studies6"> (制作期間 1ヶ月、コードはこちら: <a href="https://www.github.com/kai9kono/bookers2" target="_blank">GitHub</a>)</p>
+                            <p class="studies-entry" id="studies5">Bookers</p>
+                            <p id="studies6"> (株式会社インフラトップ長期インターン　研修課題、制作期間 1ヶ月、コードはこちら: <a href="https://www.github.com/kai9kono/bookers2" target="_blank">GitHub</a>)</p>
                             <br/>
                             <br/>
                             <p id="studies7">長期インターンの研修課題にて、Ruby及びRuby on Railsを新たなプログラミング言語として習得しました。Bookersという、ユーザーが読んだ本のタイトルと意見を投稿し、投稿に対していいねやコメントができるという簡易的なアプリケーションを作成しました。</p>
@@ -155,14 +156,20 @@
                         </div>
                     </div>
                     <div class="studies-ex">
-                        <div class="studies-text" id="kominka">
-                            <p id="studies10"><strong>大学3年　古民家再生プロジェクト</strong></p>
+                        <div class="studies-text">
+                            <p class="studies-entry" id="studies10">古民家再生プロジェクト</p>
                             <br/>
                             <br/>
                             <p id="studies11">大学のセミナーにて、滋賀県の多賀町にある古民家に新たな用途を持たせて再生をするプロジェクトを行っています。現在はまだ現地調査を行っている途中ですが、私は建物の図面や３Dモデルを作成し、リフォームの案をモデリングするというデジタル担当をになっています。まだまだプロジェクトは途中ですが、ゼミというチームでひとつのプロジェクトを決行することや、自分の役割を全うする責任を学べました。また、現地の方々にどのような需要があるかを調査していく中で、実際に行動するこの大切さも学べました。</p>
                             <br/>
                             <br/>
                             <p id="studies12">また、ゼミでの仮研究テーマ「建築設計・リフォームにおけるAIの活用」について現在調査しています。</p>
+                        </div>
+
+                        <div class="img-slideshow">
+                            <div class="imgs">
+                                <img class="studies-img5" src="./assets/images/project_5_1.JPG">
+                            </div>
                         </div>
                     </div>
                 </div>

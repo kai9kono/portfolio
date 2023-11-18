@@ -143,6 +143,29 @@ nav {
   transform: none;
 }
 
+.toggle-language button {
+    background: none;
+    border: none;
+
+}
+
+.toggle-language {
+    display: inline-block;
+    position: absolute;
+    margin-left: 120px;
+    width: 80px;
+    height: 32px;
+    margin-top: 1.5em;
+}
+
+.toggle-language a {
+    transition: color 0.3s ease;
+}
+
+.toggle-language a:hover {
+    color: tomato;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -268,8 +291,9 @@ h3 {
     background-position-x: center;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 60%;
+    width: 50%;
     box-shadow: 0 0 100px 0 #ffedd3 inset;
+    margin: 0 auto;
 }
 
 .qualifications-bg, .studies-bg {
@@ -384,7 +408,7 @@ h3 {
     height: 400px;
 }
 
-.studies-img1,.studies-img2 {
+.studies-img1,.studies-img2, .studies-img5 {
     max-width: 700px;
     max-height: 700px;  
     margin: 0 auto;
@@ -428,6 +452,11 @@ h3 {
     font-size: 12px;
 }
 
+.studies-entry {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
 #kominka {
     width: 90%;
     margin-right: 5%;
@@ -439,13 +468,13 @@ h3 {
 }
 
 .arrow-button-left,.arrow-button-right {
-    width: 30px;
-    height: 25px;
-    background-color:#666;
+    width: 70px;
+    height: 50px;
+    background: none;
     border: none;
-    color: white;
-    font-size: 10px;
-    border-radius: 8px;
+    color: #333;
+    font-size: 20px;
+    border-radius: 5px;
     transition: background-color 0.3s;
 }
 
