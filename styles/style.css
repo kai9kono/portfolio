@@ -15,6 +15,15 @@ nav {
     position: fixed;
 }
 
+.toggle-language, .accordion, #mail, #phone {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+#phone a:hover, #mail a:hover {
+    text-decoration: underline;
+}
+
 /* Hamburger */
 
 #menuToggle
