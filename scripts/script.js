@@ -97,3 +97,19 @@ function scrollToContact() {
 function scrollToQualifications() {
   qualifications.scrollIntoView({behavior: "smooth"});
 }
+
+//Collapsible
+document.querySelectorAll(".accordion").forEach(button => {
+  button.addEventListener('click', () => {
+    const  accordionContent = button.nextElementSibling;
+
+    button.classList.toggle('accordion--active');
+
+    if (button.classList.contains('accordion--active')) {
+      accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+    }
+    else {
+      accordionContent.style.maxHeight = 0;
+    }
+  });
+});

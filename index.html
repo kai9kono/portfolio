@@ -46,6 +46,9 @@
                     <br/>
                     <br/>
                     <p class="bio">好みのデザインはシンプル、かつ自然で目に優しいものです。</p>
+                    <!-- <div class="venns-img">
+                        <img src="assets/images/venns.png" id="venns">
+                    </div> -->
                 </span>
                 <span id="portrait"></span>
             </div>
@@ -61,7 +64,7 @@
                             <span class="qualification-text">
                                 <h3>TOEFL 110</h3>
                                 <h3>TOEIC 985</h3>
-                                <h3 id="eiken">英検１級</h3>
+                                <h3 id="non-bold">英検１級</h3>
                                 <p>アメリカに住んでいた経験から、ネイティブレベルの英語力を習得しました。現在でも当時の友人とこまめに連絡を取り、英語力の維持・向上を心がけています。多言語を習得したことで、より広い視野を持つことができ、考え方の選択肢が増えたと考えています。</p>
                             </span>
                         </span> 
@@ -79,8 +82,8 @@
                                 <img src="./assets/images/illustrator_logo.png">
                             </span>
                             <span class="qualification-text">
-                                <h3>Adobe Illustrator</h3>
-                                <p>大学の課題のプレゼンテーションボードを作成する際に使用しています。現在も学習中ですが、簡易的なポスターやプレゼンテーション作成のためであれば問題なく使えます。</p>
+                                <h3 id="non-bold">デザインツール</h3>
+                                <p>IllustratorやPhotoshopをはじめ、Figmaなどのツールを使えます。大学の課題のプレゼンテーションボードを作成する際に使用しています。現在も学習中ですが、簡易的なポスターやプレゼンテーション作成のためであれば問題なく使えます。</p>
                             </span>
                         </span>
                         <span class="qualifications-entry">
@@ -92,6 +95,15 @@
                                 <p>AutoCAD, Revit, Rhinoceros などのソフトウェアが使えます。建築の設計図を作成する際に用いる専門的なソフトウェアですが、これらのソフトを学習したことでモデリングなどの視点・考え方を学べました。</p>
                             </span>
                         </span>
+                        <span class="qualifications-entry">
+                            <span class="qualification-img">
+                                <img src="./assets/images/ChatGPT_logo.png">
+                            </span>
+                            <span class="qualification-text">
+                                <h3>AI</h3>
+                                <p>ChatGPTのみならず、MidjourneyやStable Diffusionなどの画像生成AIを有効的に使えます。新たなアイデアを得るためや、仕事の効率化を図るためにAIは積極的に活用しています。</p>
+                            </span>
+                        </span> 
                     </div>
                 </div>
             </div>
@@ -100,16 +112,17 @@
                     <h3 class="entry" id="studies">Studies</h3>
                     <div class="studies-ex">
                         <div class="studies-text">
-                            <p class="studies-entry" id="studies1">Hotel Oasis</p>
-                            <p id="studies6">(大学３年次設計課題、制作期間 7週間)</p>
-                            <br/>
-                            <br/>
-                            <div class="content">
+                            <button type="button" class="accordion">
+                                <p class="studies-entry" id="studies1">Hotel Oasis</p>
+                                <p id="studies6">(大学３年次設計課題、制作期間 7週間)</p>
+                            </button>
+
+                            <div class="content1">
                                 <p id="studies2">大学三年次の建築設計演習にて、大阪駅付近にあるお初天神の周りのビルを撤去し新たな複合施設を設計するという課題が与えられました。私はオフィスと同等の収益を見込むための収容率を確保する必要があると考えたため、観光客に向けた高層ホテルを設計しました。また、街の公益性に着眼し、お初天神との関連性を持たせるため、日本庭園の軸を応用した公園も設計しました。</p>
                                 <br/>
                                 <p id="studies3">この課題を通して、設計者として作りたいものと現実的に求められているもののバランスをとらなければいけないことを学びました。複合施設とはいえ、元々オフィスで収益を得ていた地域には同等またはそれ以上の価値があるものを建設する必要があり、必ずしも設計者が作りたいものを作れないという事実を学びました。</p>
                                 <br/>
-                                <p id="studies4">また、はじめてRevitというモデリングソフトをしようした課題でもあったため、与えられた短期間で新たなツールを学ぶことができ、自分にとって成長を感じられたプロジェクトでした。以前は住宅などの設計で簡易的な図面を作るためにはCADが効率的でしたが、大型の施設を作るためには緻密な設計より構造や素材がわかるプレゼンテーションの方が優れていると感じたため使用しました。結果的にはより効率的だったため、ものによってツールを変えることの大切さも学ぶことができました。</p>
+                                <p id="studies4">また、はじめてRevitというモデリングソフトを使用した課題でもあったため、与えられた短期間で新たなツールを学ぶことができ、自分にとって成長を感じられたプロジェクトでした。以前は住宅などの設計で簡易的な図面を作るためにはCADが効率的でしたが、大型の施設を作るためには緻密な設計より構造や素材がわかるプレゼンテーションの方が優れていると感じたため使用しました。結果的にはより効率的だったため、ものによってツールを変えることの大切さも学ぶことができました。</p>
                             </div>
                         </div>
                         
@@ -129,15 +142,17 @@
                     </div>
                     <div class="studies-ex">
                         <div class="studies-text" >
-                            <p class="studies-entry" id="studies5">Bookers</p>
-                            <p id="studies6"> (株式会社インフラトップ長期インターン　研修課題、制作期間 1ヶ月、コードはこちら: <a href="https://www.github.com/kai9kono/bookers2" target="_blank">GitHub</a>)</p>
-                            <br/>
-                            <br/>
-                            <p id="studies7">長期インターンの研修課題にて、Ruby及びRuby on Railsを新たなプログラミング言語として習得しました。Bookersという、ユーザーが読んだ本のタイトルと意見を投稿し、投稿に対していいねやコメントができるという簡易的なアプリケーションを作成しました。</p>
-                            <br/>
-                            <p id="studies8">この課題を通して、初めてデータベース機能を持つアプリケーションを作成する経験ができました。今まで制作してきたプログラムやウェブサイトはデータベースがないものでした。そのため、投稿フォームや投稿の保存と表示をする際のフローを理解することに苦労しましたが、１ヶ月という短い期間で言語を学習し、プロジェクトを完成することができました。</p>
-                            <br/>
+                            <button type="button" class="accordion">
+                                <p class="studies-entry" id="studies5">Bookers</p>
+                                <p id="studies6"> (株式会社インフラトップ長期インターン　研修課題、制作期間 1ヶ月<br/>コードはこちら: <a href="https://www.github.com/kai9kono/bookers2" target="_blank">GitHub</a>)</p>
+                            </button>
+                            <div class="content2">
+                                <p id="studies7">長期インターンの研修課題にて、Ruby及びRuby on Railsを新たなプログラミング言語として習得しました。Bookersという、ユーザーが読んだ本のタイトルと意見を投稿し、投稿に対していいねやコメントができるという簡易的なアプリケーションを作成しました。</p>
+                                <br/>
+                                <p id="studies8">この課題を通して、初めてデータベース機能を持つアプリケーションを作成する経験ができました。今まで制作してきたプログラムやウェブサイトはデータベースがないものでした。そのため、投稿フォームや投稿の保存と表示をする際のフローを理解することに苦労しましたが、１ヶ月という短い期間で言語を学習し、プロジェクトを完成することができました。</p>
+                                <br/>
                             <p id="studies9">本インターンでは、エンジニアへの転職を志望する方々のプログラミング学習をメンターとして支えるという業務を行っていました。そのため、様々な背景を持つ方々とのコミュニケーションをすることを学べた上に、メンターとして簡潔に、順序立てを行うことでわかりやすく話す能力も身につきました。</p>
+                        </div>    
                         </div>
                         
                         <div class="img-slideshow">
@@ -157,13 +172,16 @@
                     </div>
                     <div class="studies-ex">
                         <div class="studies-text">
-                            <p class="studies-entry" id="studies10">古民家再生プロジェクト</p>
-                            <br/>
-                            <br/>
+                            <button type="button" class="accordion">
+                                <p class="studies-entry" id="studies10">古民家再生プロジェクト</p>
+                                <p id="studies6">(大学３年次ゼミ、制作期間: 未定)</p>
+                            </button>
+                            <div class="content3">
                             <p id="studies11">大学のセミナーにて、滋賀県の多賀町にある古民家に新たな用途を持たせて再生をするプロジェクトを行っています。現在はまだ現地調査を行っている途中ですが、私は建物の図面や３Dモデルを作成し、リフォームの案をモデリングするというデジタル担当をになっています。まだまだプロジェクトは途中ですが、ゼミというチームでひとつのプロジェクトを決行することや、自分の役割を全うする責任を学べました。また、現地の方々にどのような需要があるかを調査していく中で、実際に行動するこの大切さも学べました。</p>
-                            <br/>
-                            <br/>
-                            <p id="studies12">また、ゼミでの仮研究テーマ「建築設計・リフォームにおけるAIの活用」について現在調査しています。</p>
+                                <br/>
+                                <br/>
+                                <p id="studies12">また、ゼミでの仮研究テーマ「建築設計・リフォームにおけるAIの活用」について現在調査しています。</p>
+                            </div>
                         </div>
 
                         <div class="img-slideshow">

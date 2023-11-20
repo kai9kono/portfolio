@@ -260,6 +260,17 @@ h3 {
     color: #888;
 }
 
+#venns {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.venns-img {
+    text-align: center;
+}
+
 .biography {
     font-size: 18px;
     width: 100%;
@@ -368,7 +379,7 @@ h3 {
     padding: 0;
 }
 
-#eiken {
+#non-bold {
     font-weight: 500;
 }
 
@@ -385,6 +396,11 @@ h3 {
     width: 20%;
     height: 33%;
     text-align: left;
+}
+
+#figma-logo {
+    object-fit: contain;
+    height: 64px;
 }
 
 .qualifications-container {
@@ -429,6 +445,34 @@ h3 {
     text-align: center;
     width: 65%;
     vertical-align: middle;
+}
+
+.accordion {
+    background: none;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.accordion:hover {
+    background: #eee;
+}
+
+.accordion::after {
+    content: '▼';
+    float: right;
+}
+
+.accordion--active::after {
+    content: "◀︎";
+}
+
+.content1, .content2, .content3 {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
 }
 
 .studies-ex {
