@@ -211,19 +211,19 @@ a {
     text-decoration: inherit;
 }
 
-.studies a:link {
+.studies-bg a:link {
     color: #0000EE;
     background-color: transparent;
     text-decoration: none;
   }
   
-.studies a:visited {
+.studies-bg a:visited {
     color: #551A8B;
     background-color: transparent;
     text-decoration: underline;
   }
 
-.studies a:hover {
+.studies-bg a:hover {
     color: #9999e8;
     background-color: transparent;
     text-decoration: underline;
@@ -385,11 +385,18 @@ h3 {
 }
 
 #page2 {
-    margin-top: 0px;
+    margin-top:40px;
+    text-align: center;
+    display: inline-block;
+}
+
+#page2 img {
+    width: 45%;
 }
 
 #main-page2 {
     padding-top: 30px;
+    text-align: center;
 }
 
 .contact {
@@ -498,55 +505,36 @@ h3 {
     height: 400px;
 }
 
-.studies-img1,.studies-img2, .studies-img5 {
-    max-width: 700px;
-    max-height: 700px;  
+.studies-img {
     margin: 0 auto;
+    width: 90%;
+    padding-bottom: 20px;
+    border-bottom: rgba(202, 202, 202, 0.5) 1px solid;
+}
+
+.studies-img1 {
+    max-width: 45%;
+    max-height: 700px;
+    margin: 2% 2% 0 2%;
     vertical-align: middle;
     position: relative;
-    top: 50%;
-    transform: translate(0,-50%);
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#bookers {
+    margin-bottom: 10px;
+}
+
+.studies-content {
+    text-align: left;
+    margin: 20px 5% 20px 5%;
 }
 
 .imgs {
     height: 600px;
     vertical-align: middle;
     justify-content: center;
-}
-
-.img-slideshow {
-    display: inline-block;
-    text-align: center;
-    width: 65%;
-    vertical-align: middle;
-}
-
-.accordion {
-    background: none;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    padding: 10px;
-    transition: background 0.3s;
-}
-
-.accordion:hover {
-    background: #eee;
-}
-
-.accordion::after {
-    content: '▼';
-    float: right;
-}
-
-.accordion--active::after {
-    content: "◀︎";
-}
-
-.content1, .content2, .content3 {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s;
 }
 
 .studies-ex {
@@ -560,18 +548,12 @@ h3 {
     text-align: center;
 }
 
-.studies-text {
-    vertical-align: middle;
-    width: 25%;
-    display: inline-block;
-    margin-left: 5%;
-}
-
 #studies6 {
     font-size: 12px;
 }
 
 .studies-entry {
+    margin: 20px 0 10px 0;
     font-weight: bolder;
     font-size: 20px;
 }
