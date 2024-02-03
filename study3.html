@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -12,40 +13,57 @@
     </head>
     <header class="header">
         <nav role="navigation">
-            <div id="menuToggle">
-                <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                <ul id="menu">
-                    <button onclick="scrollToAboutMe()"><li>About Me</li></button>
-                    <button onclick="scrollToQualifications()"><li>Skills</li></button>
-                    <button onclick="scrollToStudies()"><li>Studies</li></button>
-                    <button onclick="scrollToContact()"><li>Contact</li></button>
-                </ul>
+            <div id="back">
+                <button class="back-arrow left">
+                    <a href="./index.html">
+                    <svg width="15px" height="20px" viewBox="0 0 50 80" xml:space="preserve">
+                      <polyline fill="none" stroke="#232323" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                    </svg>  
+                    </a>
+                  </button>
             </div>
             <span class="toggle-language"><button><a href="./en.html"> <strong>JP</strong> / EN </a></button></span>
         </nav>
     </header>
-<body>                 
-<div class="studies-ex">
-    <div class="studies-text">
-        <button type="button" class="accordion">
-            <p class="studies-entry" id="studies10">古民家再生プロジェクト</p>
-            <p id="studies6">(大学３年次ゼミ、制作期間: 未定)</p>
-        </button>
-        <div class="content3">
-        <p id="studies11">大学のセミナーにて、滋賀県の多賀町にある古民家に新たな用途を持たせて再生をするプロジェクトを行っています。現在はまだ現地調査を行っている途中ですが、私は建物の図面や３Dモデルを作成し、リフォームの案をモデリングするというデジタル担当をになっています。まだまだプロジェクトは途中ですが、ゼミというチームでひとつのプロジェクトを決行することや、自分の役割を全うする責任を学べました。また、現地の方々にどのような需要があるかを調査していく中で、実際に行動するこの大切さも学べました。</p>
-            <br/>
-            <br/>
-            <p id="studies12">また、ゼミでの仮研究テーマ「建築設計・リフォームにおけるAIの活用」について現在調査しています。</p>
+    <body>
+        <div class="main" id="main-page2">
+            <div class="studies-bg" id="page2">
+                <div class="studies">
+                    <div class="study-img">
+                        <a href="./study4.html"><img src="./assets/images/project_6_1.png"></a>
+                    </div>
+                    <div class="study-img">
+                        <a href="./study2.html"><img src="./assets/images/project_3_1.png"></a>
+                    </div>
+                    <div class="study-img">
+                        <a href="./study3.html"><img src="./assets/images/project_5_1.jpg"></a>
+                    </div>
+                </div>
+            </div>
+                <div class="contact">
+                    <div class="entry" id="contact">
+                        <h3 class="contact-entry" id="contact">Contact</h3>                        
+                    </div>
+                    <div class="contact-content">
+                        <span class="contact-details">
+                            <span class="contact-img">
+                                <img src="./assets/images/mail-icon.png">
+                            </span>
+                            <span id="mail">
+                                <a href="mailto:kai9kono@gmail.com">kai9kono@gmail.com</a>
+                            </span> 
+                        </span>
+                        <span class="contact-details">
+                            <span class="contact-img">
+                                <img src="./assets/images/phone-icon.png"> 
+                            </span>
+                            <span id="phone">
+                                <a href="tel:080-9469-1969">080-9469-1969</p>
+                            </span>
+                        </span>
+                    </div>
+                </div>
         </div>
-    </div>
-
-    <div class="img-slideshow">
-        <div class="imgs">
-            <img class="studies-img5" src="./assets/images/project_5_1.JPG">
-        </div>
-    </div>
-</div>
-</body>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

@@ -24,6 +24,37 @@ nav {
     text-decoration: underline;
 }
 
+#back {
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 50px;
+  
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.back-arrow {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 0;
+    outline:0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+  }
+
+  .back-arrow polyline {
+    stroke-width: 4;
+    transition: stroke ease 0.3s;
+  }
+
+  .back-arrow:hover polyline {
+    stroke: tomato;
+  }
+
 /* Hamburger */
 
 #menuToggle
@@ -199,7 +230,7 @@ a {
 }
 
 .study-img {
-    width: 50%;
+    width: 45%;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
@@ -207,6 +238,8 @@ a {
 }
 
 .study-img img {
+    position: relative;
+    text-align: center;
     margin: 0 auto;
     width: 70%;
     float: center;
@@ -241,7 +274,7 @@ h3 {
 .main {
     margin: 0 auto;
     height: 100%;
-    background-color: #ffedd3;
+    background-color: #ffedd3 !important;
 }
 
 .introduction {
@@ -349,6 +382,14 @@ h3 {
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin-bottom: 50px;
+}
+
+#page2 {
+    margin-top: 0px;
+}
+
+#main-page2 {
+    padding-top: 30px;
 }
 
 .contact {
@@ -516,6 +557,7 @@ h3 {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .studies-text {
